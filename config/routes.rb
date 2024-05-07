@@ -4,6 +4,5 @@ Rails.application.routes.draw do
   
   root to: "messages#index"
   resources :users, only: [:edit, :update]
-  # Defines the root path route ("/")
-  # root "articles#index"
+  resources :rooms, only: [:new, :create]
 end
